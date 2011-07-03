@@ -1,0 +1,14 @@
+{
+  "name":  "Better GCal",
+  "version": "0.1",
+  "description": "Get rid of calendar chrome crud",
+  "permissions": [
+    "https://www.google.com/calendar/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/calendar/*"],
+      "js": ["jquery.min.js", "script.js"]
+    }
+  ]
+}
